@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: mgrvp2n2f-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/mgrvp2n2f-python-gitops

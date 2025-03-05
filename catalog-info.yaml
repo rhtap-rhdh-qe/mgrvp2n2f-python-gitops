@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: mgrvp2n2f-python-gitops
+  description: This is GitOps manifest for mgrvp2n2f-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=mgrvp2n2f-python
+    backstage.io/kubernetes-id: mgrvp2n2f-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: mgrvp2n2f-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:mgrvp2n2f-python
